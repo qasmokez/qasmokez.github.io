@@ -95,7 +95,7 @@ function TopBar() {
           </Typography>
           <Box sx={{
             flexGrow: 1,
-            display: {md: 'flex', xs: 'none'},
+            display: {sm: 'flex', xs: 'none'},
             justifyContent: 'flex-end',
             }}>
             {pages.map((page) => (

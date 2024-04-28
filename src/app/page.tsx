@@ -1,9 +1,23 @@
+'use client';
+import Main from './Main'
+
+import {createTheme, ThemeProvider} from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#000000"
+    },
+    secondary: {
+      main: "#ffffff"
+    }
+  }
+});
+
 export default function Page() {
   return (
-    <div>
-      <h1>Hello, World! (test)</h1>
-      <hr></hr>
-      <div>Jason Zhang</div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Main />
+    </ThemeProvider>
   )
-}
+};

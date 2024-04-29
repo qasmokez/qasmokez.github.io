@@ -24,10 +24,17 @@ function TopBar() {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const drawerWidth = 200;
+  const drawerWidth = 350;
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: 'center',
+        backgroundColor: '#f0f0f0',
+        height: '100%'
+      }}
+    >
+      <Typography variant="h5" sx={{ my: 2 }}>
         MENU
       </Typography>
       <Divider />
@@ -35,7 +42,7 @@ function TopBar() {
         {pages.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText primaryTypographyProps={{fontSize: '20px'}} primary={item} />
             </ListItemButton>
           </ListItem>
         ))}

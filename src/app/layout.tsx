@@ -9,7 +9,7 @@ export default function RootLayout({
     <html
       className="dark"
       lang="en-US"
-      style={{ colorScheme: 'dark' }}
+      style={{colorScheme: 'dark', backgroundColor: '#121212'}}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

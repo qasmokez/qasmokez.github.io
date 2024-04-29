@@ -1,7 +1,7 @@
 'use client';
 import {createTheme} from "@mui/material";
 
-const darkMode = 1;
+// const darkMode = 1;
 
 export const Theme = createTheme({
   typography: {
@@ -12,7 +12,7 @@ export const Theme = createTheme({
       main: "#121212"
     },
     secondary: {
-      main: "#ffffff"
+      main: "#f0f0f0"
     },
     // mode: darkMode ? 'dark' : 'light',
   }

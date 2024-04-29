@@ -12,7 +12,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
-// import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 
 const pages = ['Portfolio', 'About', 'Resume', 'Contact'];
@@ -55,8 +55,7 @@ function TopBar() {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            {/* <MenuIcon /> */}
-            <img src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png" height={25} width={25}/>
+            <MenuIcon />
           </IconButton>
           <nav>
             <Drawer

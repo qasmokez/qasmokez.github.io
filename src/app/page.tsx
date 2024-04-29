@@ -1,22 +1,12 @@
 'use client';
-import Main from './Main'
+import {Theme} from './Theme'
+import {ThemeProvider} from "@mui/material";
 
-import {createTheme, ThemeProvider} from "@mui/material";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#000000"
-    },
-    secondary: {
-      main: "#ffffff"
-    }
-  }
-});
+import Main from './Main/Main'
 
 export default function Page() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <Main />
     </ThemeProvider>
   )

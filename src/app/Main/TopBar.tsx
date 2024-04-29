@@ -44,7 +44,7 @@ function TopBar() {
   );
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* ========= Mobile ========= */}
@@ -105,8 +105,10 @@ function TopBar() {
                   my: 2,
                   color: 'white',
                   display: 'block',
-                  fontSize: '0.8rem',
+                  fontSize: '1.2rem',
                   marginRight: '10px',
+                  textTransform: 'none',
+                  fontWeight: 100,
                 }}
               >
                 {page}
